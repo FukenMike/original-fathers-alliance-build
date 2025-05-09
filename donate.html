@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Donate - The Father's Alliance</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #1A2238;
+            font-family: 'Source Sans Pro', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #EDE6DC;
+        }
+        .background {
+            background: url('images/donate.jpg') center center / cover no-repeat fixed;
+            padding: 5rem 2rem;
+        }
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: rgba(26, 34, 56, 0.85);
+            padding: 3rem;
+            border-radius: 1rem;
+            font-size: 1.2rem;
+        }
+        .scroll-fade {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+        .scroll-fade.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .donate-btn {
+            display: inline-block;
+            margin-top: 2rem;
+            background-color: #FFC145;
+            color: #1A2238;
+            padding: 1rem 2rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 1rem;
+            font-size: 1.2rem;
+            text-decoration: none;
+            box-shadow: 0 0 10px #FFC145, 0 0 20px #FFC145;
+        }
+        nav#nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(26, 34, 56, 0.95);
+            padding: 1rem;
+            text-align: center;
+            z-index: 1000;
+        }
+        nav#nav a {
+            color: #EDE6DC;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+        nav#nav a:hover {
+            color: #FFC145;
+        }
+    </style>
+    <script>
+        window.addEventListener('scroll', () => {
+            document.querySelectorAll('.scroll-fade').forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 100) {
+                    el.classList.add('visible');
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <nav id="nav">
+        <a href="index.html">Home</a>
+        <a href="who.html">Who We Are</a>
+        <a href="mission.html">Mission</a>
+        <a href="vision.html">Vision</a>
+        <a href="founder-story.html">Founder</a>
+        <a href="donate.html">Donate</a>
+    </nav>
+
+    <section class="background">
+        <div class="content scroll-fade">
+            <p><strong>We’re not a charity. We’re a counterforce.</strong></p>
+
+            <p>If you're here, it's because you feel it too—this system doesn’t break by accident. It was built this way. Families fall through the cracks, and no one’s there to catch them.</p>
+
+            <p>We're not here to talk about “causes.” We’re here to stop the bleeding.</p>
+
+            <h3>How Your Donation Helps:</h3>
+            <ul>
+                <li>Fixing busted brakes so kids can get to school safely</li>
+                <li>Filling empty fridges and empty gas tanks</li>
+                <li>Keeping the lights on during court-ordered chaos</li>
+                <li>Paying for motel nights when there’s nowhere else to go</li>
+            </ul>
+
+            <p>This isn’t overhead or admin fees—it’s survival fuel.</p>
+
+            <p>If you believe families deserve a real shot at healing—<br><strong>Help us give it to them.</strong></p>
+
+            <a href="https://gofund.me/a494a3b4" class="donate-btn" target="_blank">Donate Now</a>
+        </div>
+    
+        <div class="content scroll-fade" style="margin-top: 3rem;">
+            <h3>We’re Also Looking for Allies.</h3>
+            <p>The Father’s Alliance isn’t just looking for donations—we’re looking for people who want to build something that lasts.</p>
+            <p>We’re in the early stages of incorporating as a nonprofit. That means we need voices. Guidance. People who aren’t afraid to step into the mess with us and help shape a better way forward.</p>
+            <ul>
+                <li>Board members who believe in what we’re doing</li>
+                <li>Collaborators with vision and strategy</li>
+                <li>People with legal, nonprofit, or community experience</li>
+                <li>Anyone who’s tired of waiting for change and ready to help create it</li>
+            </ul>
+            <p>If that’s you—reach out.<br><strong>Email:</strong> <a href="mailto:michaelgriggs@thefathersalliance.org" style="color: #FFC145;">michaelgriggs@thefathersalliance.org</a></p>
+            <p><em>Let’s build the kind of alliance the system never saw coming.</em></p>
+        </div>
+    </section>
+    
+
+</body>
+</html>

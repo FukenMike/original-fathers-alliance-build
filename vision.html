@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vision - Split View</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      display: flex;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.8);
+      color: white;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .column {
+      flex: 1;
+      overflow-y: auto;
+      height: 100vh;
+      padding: 6rem 2rem 2rem;
+      box-sizing: border-box;
+    }
+
+    .left {
+      background: url('images/vision-left.jpg') center center no-repeat;
+      background-size: cover;
+      color: #f3f3f3;
+      background-attachment: fixed;
+      backdrop-filter: blur(3px);
+      background-blend-mode: multiply;
+      background-color: rgba(0,0,0,0.7);
+    }
+
+    .right {
+      background: url('images/vision-right.jpg') center center no-repeat;
+      background-size: cover;
+      color: #fff;
+      background-attachment: fixed;
+      backdrop-filter: blur(3px);
+      background-blend-mode: multiply;
+      background-color: rgba(0,0,0,0.6);
+    }
+
+    .content {
+      background: rgba(0,0,0,0.6);
+      padding: 2rem;
+      border-radius: 10px;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.6;
+      font-size: 1.1rem;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+  </style>
+</head>
+<body>
+  
+
+<nav id="nav">
+    <a href="index.html">Home</a>
+    <a href="who.html">Who We Are</a>
+    <a href="mission.html">Mission</a>
+    <a href="vision.html">Vision</a>
+    <a href="founder-story.html">Founder</a>
+</nav>
+
+
+  <div class="column left">
+    <div class="content">
+      <h2>The Current System</h2>
+      <p>
+        • Nearly 1 in 4 children in the U.S. lives without a biological father in the home—yet single fathers receive <strong>less than 4% of TANF aid</strong> nationwide.<br /><br />
+        • Over 60% of families facing child protective services intervention report financial instability as a primary stressor—but no emergency financial support is offered before removal.<br /><br />
+        • Starting a business? Good luck. Average SBA microloan is $13,000, but requires a 640+ credit score, personal collateral, and a business plan judged by outdated standards.<br /><br />
+        • Mental health services have waitlists of up to 6 months in low-income areas, with <strong>70% of counties lacking a single child psychiatrist</strong>.<br /><br />
+        • Federal aid systems rely on “head of household” forms that don’t reflect split custody, kinship care, or blended families—leaving countless caregivers invisible.<br /><br />
+        • Red tape kills support. Applying for Section 8, childcare vouchers, or vehicle repair funds can take months—and require documentation most families don’t have access to in crisis.<br /><br />
+        • Family courts incentivize conflict, not reunification. Mediation is rare. Visitation is often limited not for safety, but for lack of transportation or housing.<br /><br />
+        • Business grants often go to "innovation," not survival. There's <strong>no funding path for someone just trying to fix a van and get to work</strong>.
+      </p>
+    </div>
+  </div>
+  <div class="column right">
+    <div class="content">
+      <h2>The Future We’re Building</h2>
+      <p>
+        • We’re creating a system where support shows up early—before families collapse, not after.<br /><br />
+        • Need-based help, not form-based. Real people with real needs—whether they check a box or not—deserve aid.<br /><br />
+        • Startup help isn’t just for tech bros. Microgrants and local investor pools will fund dignity-based businesses: car repair, childcare, mobile food shops, and more.<br /><br />
+        • Instead of punishing fathers for needing help, we empower them to lead. Equal access to TANF, emergency housing, therapy, and legal aid.<br /><br />
+        • We offer transportation assistance, family advocacy, mental health access without waiting lists, and peer mentoring in your own community.<br /><br />
+        • The Father’s Alliance is building support hubs—real-world “Help Centers” that work faster than government offices. Think garages, not offices. People, not policies.<br /><br />
+        • Courts should heal, not harm. We’ll train mediators, fund reunification, and provide courtroom advocates for parents who’ve been silenced.<br /><br />
+        • We believe your idea matters—even if it's just a pressure washer and a dream. You don’t need perfect credit to matter. You need a chance. We’re building that chance.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
